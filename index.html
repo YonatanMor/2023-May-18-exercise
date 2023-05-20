@@ -7,5 +7,49 @@
     <link rel="stylesheet" href="style.css" />
     <title>May 18 execrise</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form action="">
+        <h2>User Details:</h2>
+        <div class="upper_section">
+          <div class="upper_item">
+            <label for="fNmae">First Name:</label>
+            <input type="text" id="fNmae" />
+          </div>
+          <div class="upper_item">
+            <label for="lNmae">Last Name:</label>
+            <input type="text" id="lNmae" />
+          </div>
+          <div class="upper_item">
+            <label for="mail">E-mail:</label>
+            <input type="text" id="mail" />
+          </div>
+          <div class="upper_item">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" />
+          </div>
+        </div>
+        <div class="mid_section">
+          <h2>Additional Details:</h2>
+          <label for="profession">Profession</label>
+          <select name="cars" id="profession">
+            <option value="volvo">- Select -</option>
+            <option value="eng">Eng.</option>
+            <option value="developer">Developer</option>
+            <option value="carpenter">Carpenter</option>
+            <option value="homos">Homos Maker</option>
+          </select>
+          <label for="textarea">Comments:</label>
+          <textarea name="" id="textarea"  cols="30" rows="4"></textarea>
+        </div>
+        <div class="footer">
+          <hr />
+          <div class="btn_section">
+            <button>reset form</button>
+            <button>send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
