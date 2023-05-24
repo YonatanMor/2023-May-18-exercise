@@ -9,38 +9,38 @@
   </head>
   <body>
     <div class="container">
-      <form action="">
+      <form action="" method="post">
         <h2>User Details:</h2>
         <div class="upper_section">
           <div class="upper_item">
             <label for="fNmae">First Name:</label>
-            <input type="text" id="fNmae" />
+            <input type="text" id="fNmae" name="first name" />
           </div>
           <div class="upper_item">
             <label for="lNmae">Last Name:</label>
-            <input type="text" id="lNmae" />
+            <input type="text" id="lNmae" name="last name"/>
           </div>
           <div class="upper_item">
             <label for="mail">E-mail:</label>
-            <input type="text" id="mail" />
+            <input type="text" id="mail" name="e-mail"/>
           </div>
           <div class="upper_item">
             <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" />
+            <input type="text" id="phone" name="phone"/>
           </div>
         </div>
         <div class="mid_section">
           <h2>Additional Details:</h2>
           <label for="profession">Profession</label>
-          <select name="cars" id="profession">
-            <option value="volvo">- Select -</option>
+          <select name="ocupasion" id="profession">
+            <option value="empty">- Select -</option>
             <option value="eng">Eng.</option>
             <option value="developer">Developer</option>
             <option value="carpenter">Carpenter</option>
             <option value="homos">Homos Maker</option>
           </select>
           <label for="textarea">Comments:</label>
-          <textarea name="" id="textarea"  cols="30" rows="4"></textarea>
+          <textarea name="comment" id="textarea"  cols="30" rows="4"></textarea>
         </div>
         <div class="footer">
           <hr />
