@@ -10,45 +10,68 @@
   <body>
     <div class="container">
       <form action="" method="post">
-        <h2>User Details:</h2>
-        <div class="upper_section">
-          <div class="upper_item">
+        <div class="form_row">
+          <h2>User Details:</h2>
+        </div>
+        <div class="form_row">
+          <div class="form_item">
             <label for="fNmae">First Name:</label>
-            <input type="text" id="fNmae" name="first name" />
+            <input id="fNmae" name="first name" />
           </div>
-          <div class="upper_item">
+          <div class="form_item">
             <label for="lNmae">Last Name:</label>
-            <input type="text" id="lNmae" name="last name"/>
+            <input id="lNmae" name="last name" />
           </div>
-          <div class="upper_item">
+        </div>
+        <div class="form_row">
+          <div class="form_item">
             <label for="mail">E-mail:</label>
-            <input type="text" id="mail" name="e-mail"/>
+            <input type="email" id="mail" name="e-mail" required />
           </div>
-          <div class="upper_item">
+          <div class="form_item">
             <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone"/>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="optional"
+            />
           </div>
         </div>
-        <div class="mid_section">
+        <div class="form_row">
           <h2>Additional Details:</h2>
-          <label for="profession">Profession</label>
-          <select name="ocupasion" id="profession">
-            <option value="empty">- Select -</option>
-            <option value="eng">Eng.</option>
-            <option value="developer">Developer</option>
-            <option value="carpenter">Carpenter</option>
-            <option value="homos">Homos Maker</option>
-          </select>
-          <label for="textarea">Comments:</label>
-          <textarea name="comment" id="textarea"  cols="30" rows="4"></textarea>
         </div>
-        <div class="footer">
-          <hr />
-          <div class="btn_section">
-            <button>reset form</button>
-            <button>send</button>
+        <div class="form_row">
+          <div class="form_item">
+            <label for="profession">Profession</label>
+            <select name="ocupasion" id="profession">
+              <option value="empty">- Select -</option>
+              <option value="eng">Eng.</option>
+              <option value="developer">Developer</option>
+              <option value="carpenter">Carpenter</option>
+              <option value="homos">Homos Maker</option>
+            </select>
           </div>
         </div>
+        <div class="form_row">
+          <div class="form_item">
+            <label for="textarea">Comments:</label>
+            <textarea
+              name="comment"
+              id="textarea"
+              cols="30"
+              rows="4"
+              placeholder="let us know tour thoughts..."
+            ></textarea>
+          </div>
+        </div>
+        <hr />
+        <div class="form_button_section">
+          <button type="reset">reset form</button>
+          <button type="submit" tabindex="index">send</button>
+        </div>
+
+        <!-- <div class="footer"> -->
       </form>
     </div>
   </body>

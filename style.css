@@ -9,6 +9,16 @@ body {
   background-color: rgb(78, 81, 87);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -20,82 +30,57 @@ form {
   background-color: rgba(255, 255, 255, 0.857);
   border: 1px solid black;
   width: 400px;
-  /* width: 70vw; */
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 5px;
+  color: rgb(57, 59, 60);
+  gap: 16px;
 }
 
-form > h2 {
-  margin: 10px 20px;
-  align-self: flex-start;
+.form_row {
+  display: flex;
+  gap: 8px;
+}
+
+.form_item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.form_button_section {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.user_details_h2 {
+  width: 360px;
 }
 
 h2 {
   font-size: 1em;
-  margin: 13px 0;
-}
-
-.upper_section {
-  width: 360px;
-  /* background-color: rgb(160, 208, 208); */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 17px;
-  justify-content: space-between;
-}
-
-.upper_section div {
-  width: 160px;
 }
 
 #lName {
   margin: 0;
 }
 
-.upper_item {
+.btn_section {
   display: flex;
-  flex-direction: column;
-  /* flex-grow: 1.8; */
+  justify-content: end;
+  gap: 10px;
 }
-
-.upper_item input {
-}
-
-/* .upper_section input {
-
-} */
 
 .mid_section {
-  width: 90%;
-  /* background-color: rgb(163, 160, 206); */
+  width: 360px;
   display: flex;
   flex-direction: column;
 }
 
 .mid_section select {
   margin-bottom: 10px;
-}
-
-textarea {
-  /* resize: none; */
-}
-
-hr {
-  /* background-color: aqua; */
-  /* height: 30px; */
-  margin: 0;
-}
-
-.footer {
-  width: 90%;
-  height: 4em;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.btn_section {
 }
 
 button {
@@ -109,4 +94,33 @@ input,
 select,
 textarea {
   border: 1px rgb(41, 39, 39) solid;
+  border-radius: 3px;
+  padding: 2px;
+  resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button[type="reset"]:focus,
+button[type="reset"]:hover {
+  background-color: rgb(234, 16, 16);
+  transition: all 0.2s ease-out;
+}
+
+button[type="submit"]:focus,
+button[type="submit"]:hover {
+  background-color: rgb(30, 234, 16);
+  transition: all 0.2s ease-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid rgb(97, 197, 21);
+  border-radius: 2px;
+  transition: all 0.2s ease-out;
 }
